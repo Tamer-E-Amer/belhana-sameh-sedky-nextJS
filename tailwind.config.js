@@ -7,10 +7,26 @@ module.exports = {
   ],
   theme: {
     extend: {
+      container: { center: true },
+      // custom radial gradient
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "radial-gradient": "radial-gradient(circle, var(--tw-gradient-stops))",
+      },
+      colors: {
+        "primary-orange": "#FB9300",
+        "dark-gray": "#161515",
+        "dark-blue": "#0D1047",
+        "mid-contact-blue": "#111926",
+        "left-contact-blue": "#1C294B",
+        "contact-inputs-bg": "#141823",
+        "gray-title": "#949494",
+        "gray-text": "#707070",
+        "gray-line": "#AFAFAF",
+        "admin-bg": "#EEEEEE",
+      },
+      fontFamily: {
+        satoshi: ["Satoshi", "sans-serif"],
+        inter: ["Inter", "sans-serif"],
       },
     },
   },
