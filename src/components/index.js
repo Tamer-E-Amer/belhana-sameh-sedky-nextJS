@@ -73,7 +73,7 @@ export { default as AdminPageTitle } from "@/components/admin/adminPageTitle/Adm
 
 // dashboard
 export { default as AdminSidebar } from "@/components/admin/sidebar/AdminSidebar";
-export { default as CategoryCardsWrapper } from "@/components/admin/categoryCards/categoryCardsWrapper";
+export { default as CategoryCardsWrapper } from "@/components/admin/categoryCards/CategoryCardsWrapper";
 export { default as AdminCategoryCard } from "@/components/admin/categoryCards/AdminCategoryCard";
 export { default as AdminCategoryTable } from "@/components/admin/categoryTable/AdminCategoryTable";
 export { default as LikesCommentsDiagram } from "@/components/admin/likesCommectsDiagram/LikesCommentsDiagram";
