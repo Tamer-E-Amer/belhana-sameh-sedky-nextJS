@@ -9,12 +9,12 @@ export const connectToDB = async () => {
       return;
     }
     // console.log("mongo cnonnection str", process.env.MONGO);
-    const db = await mongoose.connect(
-      "mongodb://localhost:27017/belhana-sameh-sedky"
-    );
     // const db = await mongoose.connect(
-    //   "mongodb+srv://tameramer1g:TamerAmer@cluster0.lyb5jhz.mongodb.net/belhana-sameh-sedky?retryWrites=true&w=majority&appName=Cluster0"
+    //   "mongodb://localhost:27017/belhana-sameh-sedky"
     // );
+    const db = await mongoose.connect(
+      "mongodb+srv://tameramer1g:TamerAmer@cluster0.lyb5jhz.mongodb.net/belhana-sameh-sedky?retryWrites=true&w=majority&appName=Cluster0"
+    );
     // update the connection state
     connection.isConnected = db.connections[0].readyState;
     console.log(`Connection to the database is stablished successfuly`);
